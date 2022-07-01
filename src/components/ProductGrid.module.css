@@ -1,0 +1,36 @@
+
+#productGrid{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.productItem{
+    margin: 10px 15px;
+    width: calc(33% - 50px);
+    box-shadow:  1px 1px 4px grey ;
+    padding: 8px;
+    text-align: center;
+}
+
+.image{
+    width: 90%;
+}
+
+.brand{
+    font-weight: 400;
+}
+
+
+
+@media (max-width:700px){
+    .productItem{
+        width: calc(50% - 50px);
+    }
+}
+
+@media (max-width:400px){
+    .productItem{
+        width: 100%;
+    }
+}
